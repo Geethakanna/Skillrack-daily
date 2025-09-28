@@ -1,0 +1,9 @@
+int fin(long long int n){
+  int mask=0;
+  while(n>0){
+     int d=n%10;
+     mask |=(1<<d);
+     n/=10;
+  }
+  return mask;
+}
